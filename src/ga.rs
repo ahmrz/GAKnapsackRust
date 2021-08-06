@@ -26,16 +26,6 @@ pub struct Individual {
     pub fitness: f64
 }
 
-impl ToString for Individual {
-    fn to_string(&self) -> String {
-        let mut s: String = String::new();
-        for g in self.genes.iter() {
-            s.push_str(&(*g as u8).to_string());
-        }
-        return format!("{} F: {}", s, self.fitness);
-    }
-}
-
 impl Individual {
     fn clone(&self) -> Individual {
         return Individual{genes: self.genes.clone(), fitness: self.fitness};
@@ -128,7 +118,7 @@ impl GA {
                 self.single_point_crossover(&mut selected);
             }
             for j in 0..2 {
-                if self.n_individuals % 2 == 1 && i == self.n_individuals - 1 && j == 2 {
+                if self.n_individuals % 2 == 1 && i == self.n_individuals - 1 && j == 1 {
                     break;
                 }
                 new_p.push(selected[j].clone());
