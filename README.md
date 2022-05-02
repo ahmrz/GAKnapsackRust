@@ -1,4 +1,4 @@
-# Evolutionary Algorithms
+# Genetic Algorithm
 
 This repository contains code to solve the 0-1 knapsack problem using genetic algorithm. The genetic algorithm makes use of the following:
 
