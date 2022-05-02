@@ -11,11 +11,5 @@ This repository contains code to solve the 0-1 knapsack problem using genetic al
 Make sure you have Rust compiler installed on your computer. See [Rust website](https://www.rust-lang.org/tools/install) for more details. Clone the repository and navigate to the project root folder and type in the terminal:
 
 ```console
-cargo build --release
-```
-
-And then:
-
-```console
-cargo run --release
+cargo build --release && cargo run --release
 ```
